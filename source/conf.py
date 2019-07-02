@@ -106,23 +106,28 @@ htmlhelp_basename = 'WiBotGuidedoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
-
+latex_engine = "xelatex"
+latex_use_xindy = False
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
+    'papersize' : 'a4paper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
     # 'pointsize': '10pt',
+    'pointsize' : '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
 
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
+    'classoptions': ',openany,oneside',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
